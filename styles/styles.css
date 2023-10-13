@@ -16,9 +16,200 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-size:  18px;
+  line-height: 21px;
+  color: #252525;
+  background-color: #f2f2f2;
+}
+
+/* Header */
+.page-header {
+  color: #000000;
+}
+
+header ul {
+  list-style: none;
+}
+
+/* navigation */
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-border {
+  border-bottom: 3px solid #756257;
+}
+
+
+/* Hero */
+
+.hero-background {
+  background-image: url(../images/index-image/index-background-img-welcom-sedona.jpg);
+  background-color: #b9b9b9;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
-.navigation {
+
+
+
+/* advantages */
+
+.advantages ul {
+  list-style: none;
+}
+
+.advantages-title{
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.advantages-title + p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-list-item:nth-child(1) .advantages-item-wrapper{
+  background-color: #82B3D3;
+}
+.advantages-list-item:nth-child(3) .advantages-item-wrapper{
+  background-color: #83B3D333;
+}
+.advantages-list-item:nth-child(5) .advantages-item-wrapper{
+  background-color: #82B3D3;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-list-item:first-child {
+  color: #fff;
+}
+
+.advantages-list-item:last-child {
+  color: #fff;
+}
+
+
+/* services */
+
+.housing-icon {
+  background-image: url(../images/index-image/main-icon-house.svg);
+  background-repeat: no-repeat;
+}
+
+.food-icon {
+  background-image: url(../images/index-image/main-icon-burger.svg);
+  background-repeat: no-repeat;
+}
+
+.souvenirs-icon {
+  background-image: url(../images/index-image/main-icon-present.svg);
+  background-repeat: no-repeat;
+}
+
+.servise-list-item:nth-child(1) .servise-item-wrapper{
+  background-color: #83B3D31F;
+}
+.servise-list-item:nth-child(3) .servise-item-wrapper{
+  background-color: #83B3D31F;
+}
+
+
+
+.servise-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}
+
+.servise-title + p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+
+.servise-list-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.clarify-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.clarify-subtitle {
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.news-letter-background {
+  background-image: url(../images/index-image/Subscribe-footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cfcece;
+}
+
+.news-letter-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.news-letter-title + p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #fff
+}
+.news-letter {
+  text-align: center;
+}
+
+.news-letter-button{
+  background-color: #82B3D3;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+
+}
+
+.field{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
 
 }
