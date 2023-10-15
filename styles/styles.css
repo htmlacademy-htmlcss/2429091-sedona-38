@@ -13,10 +13,6 @@
   font-display: swap;
 }
 
-*{
-  text-decoration: none;
-  list-style: none;
-}
 
 body {
   font-family: "PT Sans", sans-serif;
@@ -32,8 +28,11 @@ body {
 }
 
 
-
 /* navigation */
+.navigation ul{
+  list-style: none;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 24px;
@@ -47,11 +46,20 @@ body {
   border-bottom: 3px solid #756257;
 }
 
+.search {
+  background-image: url(../icon/header-search.svg);
+  background-repeat: no-repeat;
+}
+
+.favourites {
+  background-image: url(../icon/header-heart-.svg);
+  background-repeat: no-repeat;
+}
 
 /* Hero */
 
 .hero-background {
-  background-image: url(../images/index-image/index-background-img-welcom-sedona.jpg);
+  background-image: url(../images/index-image/index-background-img-welcom-sedona2.jpg);
   background-color: #b9b9b9;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,14 +94,15 @@ body {
   text-align: center;
 }
 
-.advantages-list-item:nth-child(1) .advantages-item-wrapper{
+
+
+.advantages-list-item:first-child .advantages-item-wrapper,
+.advantages-list-item:last-child .advantages-item-wrapper {
   background-color: #82B3D3;
 }
-.advantages-list-item:nth-child(3) .advantages-item-wrapper{
-  background-color: #83B3D333;
-}
-.advantages-list-item:nth-child(5) .advantages-item-wrapper{
-  background-color: #82B3D3;
+
+.advantages-list-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.20);
 }
 
 .advantages-title {
@@ -143,6 +152,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .servise-title + p {
@@ -212,8 +222,10 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+}
 
-
+.footer-social ul {
+  list-style: none;
 }
 
 
@@ -236,6 +248,10 @@ body {
   list-style: none;
 }
 
+.border-bottom-catalog {
+  border-bottom: 3px solid #756257;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
 }
@@ -255,6 +271,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  text-transform: uppercase;
 }
 
 .hotel-name {
@@ -322,6 +339,14 @@ body {
   font-weight: 700;
   text-align: center;
   display: contents;
+}
+
+
+.subscription-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .view-mode-button {
