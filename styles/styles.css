@@ -161,8 +161,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-
 }
+
+
 
 .advantages-title + p {
   font-size: 22px;
@@ -183,8 +184,8 @@ body {
 
 .advantages-item-wrapper {
   margin: 0;
-  padding: 0;
   width: 400px;
+
 }
 
 .advantages-list-item {
@@ -356,6 +357,7 @@ body {
   display: flex;
   justify-content: space-between;
 
+
 }
 .footer-social-list {
   display: flex;
@@ -373,12 +375,27 @@ body {
 
 /* HOTELS */
 
+.main-catalog {
+
+}
+
+.catalog {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .catalog-header-hotel-search-wrapper {
   background-image: url(../images/catalog-image/main-background-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cfcdcd;
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .catalog-header + h1 {
@@ -394,12 +411,56 @@ body {
   border-bottom: 3px solid #756257;
 }
 
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+}
+
+.vector-breadcrumbs {
+  background-image: url(../images/catalog-image/index-strelka-vector.svg);
+  background-repeat: no-repeat;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
 }
 
+.search-hotel {
+  display: flex;
+  flex-direction: column;
+  margin: 0 70px;
+}
+
 .search-hotel-filters-group {
   line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+}
+
+.two-group-search:nth-child(4) {
+  margin-right: 140px;
+}
+
+.search-hotel-filters {
+  display: flex;
+}
+
+.search-hotel-price-selection {
+  margin-right: 70px;
+}
+
+.search-hotel-price-selection-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.product-list {
+  display: flex;
+
+
 }
 
 .search-hotel-filters-title {
@@ -429,6 +490,27 @@ body {
 
 .hotels-search-pagination-button-current{
   background-color: #F2F2F2;
+}
+
+.hotels-search-pagination {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subscription {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+
+.subscription-title {
+  padding-top: 96px;
+}
+
+.subscription-form {
+  padding-bottom: 104px;
 }
 
 /* white font */
