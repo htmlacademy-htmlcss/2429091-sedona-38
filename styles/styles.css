@@ -15,7 +15,6 @@
 
 html {
   height: 100%;
-
 }
 
 *,
@@ -24,6 +23,19 @@ html {
   box-sizing: border-box;
 }
 
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .container {
   margin: 0 auto;
@@ -37,6 +49,7 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
   padding: 0 40px;
   font-family: "PT Sans", sans-serif;
   font-size:  18px;
@@ -80,6 +93,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+
 }
 
 .navigation-item {
@@ -393,26 +407,45 @@ body {
 .catalog {
   display: flex;
   flex-direction: column;
+  width: 1200px;
+
 }
 
+
+.catalog-search-hotels {
+  display: flex;
+  align-items: center;
+}
 
 .catalog-header-hotel-search-wrapper {
   background-image: url(../images/catalog-image/main-background-img.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cfcdcd;
+  padding: 35px 70px 70px 70px;
 }
 
 .catalog-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  padding: 50px 70px 60px 70px;
+}
+
+.catalog-search-hotels-sort-wrapper {
+  display: flex;
   align-items: center;
+
+}
+.catalog-sort-icon {
+  display: flex;
+
 }
 
 .catalog-header + h1 {
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
+  margin: 0;
 }
 .catalog-header ul{
   list-style: none;
@@ -424,7 +457,29 @@ body {
 
 .breadcrumbs {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: 8px;
   list-style: none;
+  width: 114px;
+}
+
+.breadcrumbs-item {
+  display: flex;
+}
+
+.breadcrumbs-link-home {
+  display: flex;
+  text-align: center;
+}
+
+.breadcrumbs-link {
+  display: flex;
+
+  color: #fff;
+  text-decoration: none;
 }
 
 .vector-breadcrumbs {
@@ -439,7 +494,31 @@ body {
 .search-hotel {
   display: flex;
   flex-direction: column;
-  margin: 0 70px;
+  margin-top: 40px;
+}
+
+.search-hotels-select-and-icons {
+  display: flex;
+  align-items: center;
+}
+
+
+.search-hotels-icons-select {
+  margin-left: 70px;
+  display: flex;
+  justify-content: space-around;
+
+}
+.search-hotels-icons-select a {
+  margin-right: 8px;
+}
+.search-hotels-icons-select a:nth-child(3) {
+  margin: 0;
+}
+
+.catalog-search-hotels-sort-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .search-hotel-filters-group {
@@ -464,13 +543,39 @@ body {
 .search-hotel-price-selection-button {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
 
+.button-third-serch-hotel {
+  margin-top: 55px;
+}
+
 .product-list {
   display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  margin-right: 20px;
+  width: 340px;
+}
+
+.product-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.product-card-hotels-info {
+  display: flex;
+  flex-wrap: wrap;
+
 }
 
 .search-hotel-filters-title {
@@ -478,6 +583,11 @@ body {
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.hotels-search-pagination-item-wrapper {
+  display: flex;
+
 }
 
 .catalog-search-result {
@@ -492,10 +602,20 @@ body {
   font-weight: 700;
   line-height: 28px;
 }
+
 .hotel-reiting{
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+
+
+.hotels-search-pagination-button {
+  background-color: #82B3D3;
+  margin-right: 8px;
+  padding: 12px;
+  border-radius: 4px;
 }
 
 .hotels-search-pagination-button-current{
@@ -505,6 +625,7 @@ body {
 .hotels-search-pagination {
   display: flex;
   justify-content: flex-start;
+  padding: 0;
 }
 
 .subscription {
@@ -531,6 +652,8 @@ body {
 
 .brown-background {
   background-color: #756157;
+  padding: 8px 34px;
+  border-radius: 4px;
 }
 
 .blue-background-bottom {
@@ -587,6 +710,8 @@ body {
 .view-mode-button {
   padding: 14px 12px;
   text-decoration: none;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
 }
 
 .view-mode-button-selected {
