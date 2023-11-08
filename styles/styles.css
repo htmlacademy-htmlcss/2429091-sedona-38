@@ -294,10 +294,28 @@ body {
 .advantages-title::after {
   content: "";
   display: block;
-  border-bottom: 2px solid rgba(118, 118, 118, 0.552);
+  /* border-bottom: 2px solid rgba(118, 118, 118, 0.552); */
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   margin: 30px auto;
 
+}
+
+/* .advantages-list-item:first-child .advantages-item-wrapper .advantages-title,
+.advantages-list-item:last-child .advantages-item-wrapper .advantages-title {
+  content: "";
+  display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34);
+} */
+
+.advantages-title:first-child::after,
+.advantages-title:last-child::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34);
+  width: 60px;
+  margin: 30px auto;
 }
 
 .title-sedona-arizona{
@@ -355,11 +373,13 @@ body {
 .advantages-item-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 230px;
-  margin: auto;
 }
+
+/* .advantages-item-wrapper:first-child,
+.advantages-item-wrapper:last-child {
+  padding: 103px 85px;
+} */
 
 .advantages-list-item:first-child,
 .advantages-list-item:last-child {
@@ -372,24 +392,22 @@ body {
 }
 
 
-/* .advantages-list-item:first-child .advantages-item-wrapper,
+.advantages-list-item:first-child .advantages-item-wrapper,
 .advantages-list-item:last-child .advantages-item-wrapper {
-  background-color: #82B3D3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
   padding: 102px 85px;
-} */
+}
 
 .advantages-img {
   display: block;
+
 }
 
 .advantages-list-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.20);
 }
+
+
+
 
 .advantages-title {
   font-size: 24px;
@@ -460,9 +478,14 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: auto;
-
+  padding: 80px 85px;
+  background-color: #83B3D31F;
 }
+
+.cervise-list .servise-list-item:nth-child(2) {
+  background-color: white;
+}
+
 .servise-item-wrapper h3 {
   margin: 0;
 }
@@ -481,7 +504,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 81px 85px;
 }
 
 .servise-item-wrapper::before {
@@ -507,15 +529,6 @@ body {
 .souvenirs-icon::before {
   background-image: url(../images/index-image/main-icon-present.svg);
   background-repeat: no-repeat;
-}
-
-.servise-list-item:nth-child(1) .servise-item-wrapper,
-.servise-list-item:nth-child(3) .servise-item-wrapper{
-  display: flex;
-  flex-direction: column;
-  grid-column: 1/-1;
-  background-color: #83B3D31F;
-  padding: 81px 85px;
 }
 
 .servise-title {
@@ -614,7 +627,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  height: 52px;
 }
 
 .subscribe-button {
@@ -987,6 +999,7 @@ body {
   width: 292px;
   padding: 14px 20px;
   font-size: 18px;
+  font-style: normal;
   font-weight: 400;
   line-height: 21px;
   font: inherit;
@@ -1088,10 +1101,12 @@ body {
   padding: 0;
 }
 
-.product-list::after {
+.product-card-wrapper-over::after {
   content: "";
   display: block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #E6E6E6;
+  margin-bottom: 40px;
+
 }
 
 .product-card {
@@ -1321,7 +1336,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0 auto;
-  height: 52px;
 }
 
 .subscribe-button {
