@@ -9,7 +9,7 @@
   <div class="container">
     <header class="page-header header-container">
       <a class="header-logo" href="https://htmlacademy.ru/">
-        <img class="header-logo-img" src="images/index-image/header-logo.svg" alt="Логотип sedona" width="138" height="64">
+        <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona">
       </a>
       <nav class="navigation">
         <div class="navigation-list-wrapper">
@@ -72,15 +72,15 @@
               <fieldset class="search-hotel-filters-group">
                 <legend class="search-hotel-filters-title">Инфраструктура:</legend>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming pool" checked>
+                  <input class="control-input input-checkbox" type="checkbox" name="swimming pool" checked>
                   Бассейн
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
+                  <input class="control-input input-checkbox" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-Fi">
+                  <input class="control-input input-checkbox" type="checkbox" name="Wi-Fi">
                   Wi-Fi
                 </label>
               </fieldset>
@@ -88,26 +88,40 @@
               <fieldset class="search-hotel-filters-group two-group-search">
                 <legend class="search-hotel-filters-title">Тип жилья:</legend>
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing" checked>
+                  <input class="control-input input-radio" type="radio" name="housing" checked>
                   Гостиница
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing">
+                  <input class="control-input input-radio" type="radio" name="housing">
                   Мотель
                 </label>
                 <label class="control">
-                  <input class="control-input" type="radio" name="housing">
+                  <input class="control-input input-radio" type="radio" name="housing">
                   Апартаменты
                 </label>
               </fieldset>
             </div>
 
             <div class="search-hotel-price-selection-wrapper">
-              <fieldset class="search-hotel-price-selection">
-                <legend class="search-hotel-filters-title">Стоимость, ₽:</legend>
-                <label><input type="text" value="0"  name="cost-min"></label>
-                <label><input type="text" value="9000" name="cost-max"></label>
-              </fieldset>
+              <div class="price-selection-wrapper">
+                <fieldset class="search-hotel-price-selection">
+                  <legend class="search-hotel-filters-title">Стоимость, ₽:</legend>
+                  <label><input type="text" value="0"  name="cost-min"></label>
+                  <label><input type="text" value="9000" name="cost-max"></label>
+                </fieldset>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="search-hotel-price-selection-button">
                 <button class="button-third-serch-hotel" type="submit">Применить</button>
                 <button class="no-border-button white-font" type="reset">Сбросить</button>
