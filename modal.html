@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="modal-container" data-test="modal">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="search-form-wrapper">
+            <div class="field-group">
+              <label class="search-options" for="date-start">Дата заезда:</label>
+              <input class="field-mod field-date" type="text" id="date-start" name="date-start" value="27 апреля 2020">
+              <span class="modal-subtitle modal-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <div class="field-group">
+              <label class="search-options" for="date-end">Дата выезда:</label>
+              <input class="field-mod field-date" type="text" id="date-end" name="date-end" value="1 сентября 2023">
+              <span class="modal-subtitle modal-available">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+
+
+            <div class="modal-field-group">
+              <div class="field-group field-group-adult">
+                <label class="search-options lable-people-field" for="number-input-adult"><span class="adult-field">Взрослые:</span></label>
+                <button class="less quantity-button" type="button"></button>
+                <input class="field-mod-people field-people" type="number" id="number-input-adult" name="number-input-adult" value="2" max="9">
+                <button class="more quantity-button" type="button"></button>
+              </div>
+              <div class="field-group field-group-child">
+                <label class="search-options lable-people-field" for="number-input-childф"><span class="child-field" data-tooltip="подсказки">Дети:</span></label>
+                <button class="less quantity-button" type="button"></button>
+                <input class="field-mod-people field-people" type="number" id="number-input-child" name="number-input-child" value="2" max="9">
+                <button class="more quantity-button" type="button"></button>
+              </div>
+            </div>
+            <button class="modal-button blue-modal-button" type="submit">Найти</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
