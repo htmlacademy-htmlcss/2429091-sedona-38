@@ -37,6 +37,7 @@
             <li class="navigation-user">
               <a class="favourites" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <output class="favourites-counter">12</output>
               </a>
             </li>
           </ul>
@@ -55,12 +56,7 @@
                 <img  class="breadcrumbs-link-home" src="images/catalog-image/main-home-icon.svg" alt="главная">
               </a>
             </li>
-            <li class="breadcrumbs-item ">
-              <div class="breadcrumbs-link">
-                <img class="vector-breadcrumbs" src="images/catalog-image/index-strelka-vector.svg" alt="Декоративная стрелочка указывающая что мы перешли с главной страницы в каталог">
-              </div>
-            </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item breadcrumbs-link-vector">
               <a class="breadcrumbs-link" href="#">Гостиницы</a>
             </li>
           </ul>
@@ -121,10 +117,10 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar">
-                          <button class="range-toggle toggle-min">
+                          <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden">Изменить минимальную цену</span>
                           </button>
-                          <button class="range-toggle toggle-max">
+                          <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden">Изменить максимальную цену</span>
                           </button>
                         </div>
