@@ -1701,6 +1701,9 @@ body {
   font-weight: 700;
   line-height: 24px;
   border-radius: 4px;
+  background-image: url(/icon/calendar-icon-modal.png);
+  background-repeat: no-repeat;
+  background-position: center right 20px;
 }
 
 .field-date {
@@ -1806,6 +1809,9 @@ body {
   width: 40px;
   height: 48px;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-form-wrapper {
@@ -1853,15 +1859,27 @@ body {
   margin-right: 46px;
 }
 
-.field-group-wrapper-tooltip {
-  position: relative;
-  display: inline;
-}
 
-.tooltip {
+
+/* .tooltip {
   position: absolute;
   width: 26px;
   height: 26px;
+} */
+
+.tooltip-text {
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  background-color: #333333;
+  color: #fff;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  font-family: PT Sans;
+  font-size: 16px;
+  bottom: 27px;
+  right: 112px;
 }
 
 .tooltip-toggle {
@@ -1875,9 +1893,17 @@ body {
   background-image: url(/icon/tooltip.svg);
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-.tooltip-text {
+.tooltip-children-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 46px;
+}
+
+/* .tooltip-text {
   position: absolute;
   top: 40px;
   left: 50%;
@@ -1892,7 +1918,7 @@ body {
   text-decoration: none;
   border-radius: 10px;
   display: block;
-}
+} */
 
 .tooltip-text::before {
   content: "";
