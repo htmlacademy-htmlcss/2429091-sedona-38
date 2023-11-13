@@ -97,7 +97,7 @@ body {
   position: relative;
   width: 100%;
   height: 83px;
-  background-image: url(../images/index-image/Vector-hero-befor.svg);
+  background-image: url("../images/index-image/Vector-hero-befor.svg");
   background-repeat: no-repeat;
   bottom: -27px;
 }
@@ -225,7 +225,7 @@ body {
 }
 
 .search {
-  background-image: url(../icon/header-search.svg);
+  background-image: url("../icon/header-search.svg");
   background-repeat: no-repeat;
   display: block;
   height: 20px;
@@ -266,7 +266,7 @@ body {
 } */
 
 .favourites {
-  background-image: url(../icon/header-heart-.svg);
+  background-image: url("../icon/header-heart-.svg");
   background-repeat: no-repeat;
   display: block;
   height: 20px;
@@ -276,7 +276,7 @@ body {
 /* Hero */
 
 .hero-background {
-  background-image: url(../images/index-image/index-background-img-welcom-sedona2.jpg);
+  background-image: url("../images/index-image/index-background-img-welcom-sedona2.jpg");
   background-color: #b9b9b9;
   background-repeat: no-repeat;
   background-size: cover;
@@ -576,17 +576,17 @@ body {
 }
 
 .housing-icon::before {
-  background-image: url(../images/index-image/main-icon-house.svg);
+  background-image: url("../images/index-image/main-icon-house.svg");
   background-repeat: no-repeat;
 }
 
 .food-icon::before {
-  background-image: url(../images/index-image/main-icon-burger.svg);
+  background-image: url("../images/index-image/main-icon-burger.svg");
   background-repeat: no-repeat;
 }
 
 .souvenirs-icon::before {
-  background-image: url(../images/index-image/main-icon-present.svg);
+  background-image: url("../images/index-image/main-icon-present.svg");
   background-repeat: no-repeat;
 }
 
@@ -652,7 +652,7 @@ body {
 }
 
 .news-letter-background {
-  background-image: url(../images/index-image/Subscribe-footer-background.png);
+  background-image: url("../images/index-image/Subscribe-footer-background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cfcece;
@@ -825,7 +825,7 @@ body {
 }
 
 .catalog-header-hotel-search-wrapper {
-  background-image: url(../images/catalog-image/main-background-img.png);
+  background-image: url("../images/catalog-image/main-background-img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cfcdcd;
@@ -882,7 +882,7 @@ body {
   width: 8px;
   height: 20px;
   margin: auto 10px auto 0 ;
-  background-image: url(/icon/Vector-breacrumbs.svg);
+  background-image: url("../icon/Vector-breacrumbs.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -905,7 +905,7 @@ body {
 }
 
 .vector-breadcrumbs {
-  background-image: url(../images/catalog-image/index-strelka-vector.svg);
+  background-image: url("../images/catalog-image/index-strelka-vector.svg");
   background-repeat: no-repeat;
 }
 
@@ -1058,7 +1058,7 @@ body {
 } */
 
 .control-input[type="checkbox"]:checked {
-  background-image: url(/icon/Vector.svg);
+  background-image: url("../icon/Vector.svg");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -1075,7 +1075,7 @@ body {
 }
 
 .control-input[type="radio"]:checked {
-  background-image: url(/icon/Vector-radio.svg);
+  background-image: url("../icon/Vector-radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1089,28 +1089,6 @@ body {
   margin: 0;
   cursor: pointer;
 }
-/* .input-checkbox:not(:last-child)::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  width: 20px;
-  height: 10px;
-  left: 207px;
-  background-image: url(/icon/Vector.svg);
-  background-repeat: no-repeat;
-} */
-
-/* .input-radio::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: #FFF;
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
-} */
 
 .control:last-child {
   margin: 0;
@@ -1650,7 +1628,7 @@ body {
   border-radius: 50px;
   border: none;
   background-color: #F2F2F2;
-  background-image: url(/icon/Vector-modal-button-cls.svg);
+  background-image: url("../icon/Vector-modal-button-cls.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1701,7 +1679,7 @@ body {
   font-weight: 700;
   line-height: 24px;
   border-radius: 4px;
-  background-image: url(/icon/calendar-icon-modal.png);
+  background-image: url("../icon/calendar-icon-modal.png");
   background-repeat: no-repeat;
   background-position: center right 20px;
 }
@@ -1709,20 +1687,6 @@ body {
 .field-date {
   padding-right: 40px;
   position: relative;
-}
-
-.field-date::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 10px;
-  background-image: url(/icon/calendar-icon-modal.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .field-mod-people {
@@ -1820,23 +1784,12 @@ body {
   gap: 23px;
 }
 
-/* .field-date::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 20px;
-  height: 20px;
-  padding: 2px 2px 3px 2px;
-  background-image: url(/icon/calendar-icon-modal.png);
-} */
-
-
 .less::before {
   content: "";
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(/icon/icon-field-people-les.svg);
+  background-image: url("../icon/icon-field-people-les.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1848,7 +1801,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
-  background-image: url(/icon/icon-field-people-more.svg);
+  background-image: url("../icon/icon-field-people-more.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1858,14 +1811,6 @@ body {
 .people {
   margin-right: 46px;
 }
-
-
-
-/* .tooltip {
-  position: absolute;
-  width: 26px;
-  height: 26px;
-} */
 
 .tooltip-text {
   display: flex;
@@ -1890,7 +1835,7 @@ body {
   border: 0;
   background-color: #82B3D3;
   border-radius: 50%;
-  background-image: url(/icon/tooltip.svg);
+  background-image: url("../icon/tooltip.svg");
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1903,26 +1848,9 @@ body {
   margin-right: 46px;
 }
 
-/* .tooltip-text {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateY(-50%);
-  width: 216px;
-  padding: 15px 18px 18px 22px;
-  background-color: #333333;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 20px;
-  text-decoration: none;
-  border-radius: 10px;
-  display: block;
-} */
-
 .tooltip-text::before {
   content: "";
-  background-image: url(/icon/tooltip-arrow.svg);
+  background-image: url("../icon/tooltip-arrow.svg");
   width: 19px;
   height: 9px;
   position: absolute;
