@@ -10,7 +10,7 @@
     <div class="container">
       <header class="page-header header-container" data-test="header">
         <a class="header-logo" href="https://htmlacademy.ru/">
-          <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona" width="140px" height="70px">
+          <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona">
         </a>
         <nav class="navigation">
           <div class="navigation-list-wrapper">
@@ -48,7 +48,7 @@
 
       <main class="main-container main-index" data-test="main">
         <section class="hero hero-background">
-          <h1 class="visually-hidden">Сайт про город седона</h1>
+          <h2 class="visually-hidden">Сайт про город седона</h2>
           <img class="logo-main-index" src="images/index-image/welcome-sedona-main.svg" alt="Картинка с горами на фоне добро пожаловать в седону" width="458" height="352">
         </section>
         <section class="advantages" data-test="advantages">
@@ -131,14 +131,15 @@
         </section>
 
         <section class="news-letter news-letter-background" data-test="subscribe">
+        <h2 class="visually-hidden">Рассылка</h2>
           <div class="news-letter-wrapper">
             <div class="news-letter-title-wrapper">
               <p class="news-letter-title">Подпишитесь на рассылку</p>
               <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
             <form class="news-letter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="email">Ваш e-mail</label>
-              <input class="field" type="email" placeholder="Ваш e-mail" name="news-letter-email" id="news-letter-email" required>
+              <label class="visually-hidden" for="email" id="news-letter-email">Ваш e-mail</label>
+              <input class="field" type="email" placeholder="Ваш e-mail" name="news-letter-email" id="email" required>
               <button class="blue-background-bottom subscribe-button" type="submit">
                 Подписаться
                 <span class="visually-hidden">Подписаться</span>

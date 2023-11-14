@@ -48,7 +48,7 @@
 
     <main class="main-catalog main-container" data-test="main">
       <div class="catalog-header-hotel-search-wrapper white-font">
-        <header class="catalog-header"></header>
+        <header class="catalog-header">
           <h1>Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item ">
@@ -143,7 +143,7 @@
         <div class="catalog-wrapper">
           <div class="catalog-search-hotels-sort-wrapper">
             <div class="catalog-search-hotels">
-              <h1 class="visually-hidden">Результаты поиска</h1>
+              <h2 class="visually-hidden">Результаты поиска</h2>
               <p class="catalog-search-result"><b>Найдено гостиниц: 38</b></p>
             </div>
             <div class="search-hotels-select-and-icons">
@@ -331,6 +331,7 @@
       </section>
 
       <section class="news-letter-catalog" data-test="subscribe">
+      <h2 class="visually-hidden">Рассылка</h2>
         <div class="news-letter-wrapper-catalog">
           <div class="news-letter-title-wrapper-catalog">
             <p class="news-letter-title-catalog">Подпишитесь на рассылку</p>
@@ -338,7 +339,7 @@
           </div>
           <form class="news-letter-form-catalog" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
-            <input class="field-catalog" type="email" placeholder="Ваш e-mail" name="news-letter-email" id="news-letter-email" required>
+            <input class="field-catalog" type="email" placeholder="Ваш e-mail" name="news-letter-email" id="email" required>
             <button class="blue-background-bottom subscribe-button" type="submit">
               Подписаться
               <span class="visually-hidden">Подписаться</span>
