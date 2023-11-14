@@ -734,11 +734,11 @@ body {
   padding: 0;
   margin: 0;
   flex-shrink: 0;
+  gap: 10px;
 }
 
 .footer-social-item {
   display: flex;
-  flex-grow: 1;
   align-items: center;
 }
 
@@ -1817,11 +1817,30 @@ body {
 .more {
   background-color: #f2f2f2;
   width: 40px;
-  padding: 14px 0;
+  height: 40px;
+  padding: 24px 0;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.less:hover svg,
+.more:hover svg {
+  fill: #000000;
+}
+
+.less:active svg,
+.more:active svg {
+  opacity: 0.3;
+}
+
+.less {
+  border-radius: 4px 0 0 4px;
+}
+.more {
+  border-radius: 0 4px 4px 0;
 }
 
 .more-less-btn-wrapper {
@@ -1835,7 +1854,7 @@ body {
   gap: 23px;
 }
 
-.less::before {
+/* .less::before {
   content: "";
   display: block;
   width: 20px;
@@ -1844,7 +1863,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .more::after {
@@ -1856,8 +1875,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  opacity: 0.3;
+  filter: grayscale(100%) opacity(0.4);
 }
+
+.more::after:hover {
+  filter: grayscale(0%) opacity(1);
+} */
 
 .people {
   margin-right: 46px;
