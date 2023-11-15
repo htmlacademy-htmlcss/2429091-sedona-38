@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
-    <link rel="icon" href="icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
   <body>
     <div class="container">
       <header class="page-header header-container" data-test="header">
         <a class="header-logo" href="https://htmlacademy.ru/">
-          <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona">
+          <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona." width="140" height="70">
         </a>
         <nav class="navigation">
           <div class="navigation-list-wrapper">
@@ -49,7 +49,7 @@
       <main class="main-container main-index" data-test="main">
         <section class="hero hero-background">
           <h2 class="visually-hidden">Сайт про город седона</h2>
-          <img class="logo-main-index" src="images/index-image/welcome-sedona-main.svg" alt="Картинка с горами на фоне добро пожаловать в седону" width="458" height="352">
+          <img class="logo-main-index" src="images/index-image/welcome-sedona-main.svg" alt="Картинка с горами на фоне добро пожаловать в седону." width="458" height="352">
         </section>
         <section class="advantages" data-test="advantages">
           <div class="advantages-title-wrapper">
@@ -63,7 +63,7 @@
                 <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
               <div class="advantages-img-wrapper">
-                <img class="advantages-img" src="images/index-image/main-sedona-city.png" alt="фото города седона" width="800" height="385">
+                <img class="advantages-img" src="images/index-image/main-sedona-city.png" alt="фото города седона." width="800px" height="385px">
               </div>
             </li>
             <li class="advantages-list-item ">
@@ -86,7 +86,7 @@
             </li>
             <li class="advantages-list-item">
               <div class="advantages-img-wrapper">
-                <img class="advantages-img" src="images/index-image/bridge-main-devil.png" alt="фотография моста дьявола" width="800" height="385">
+                <img class="advantages-img" src="images/index-image/bridge-main-devil.png" alt="фотография моста дьявола." width="800" height="385">
               </div>
               <div class="advantages-item-wrapper">
                 <h3 class="advantages-title white-font">Там есть <br> мост дьявола</h3 >
@@ -229,12 +229,12 @@
               <div class="search-form-wrapper">
                 <div class="field-group">
                   <label class="search-options" for="date-start">Дата заезда:</label>
-                  <input class="field-mod field-date" type="text" id="date-start" name="date-start" value="27 апреля 2020">
+                  <input class="field-mod field-date" type="text" id="date-start" name="date-start" value="27 апреля 2020" required>
                   <span class="modal-subtitle modal-error">Мы не можем отправить вас в прошлое.</span>
                 </div>
                 <div class="field-group">
                   <label class="search-options" for="date-end">Дата выезда:</label>
-                  <input class="field-mod field-date" type="text" id="date-end" name="date-end" value="1 сентября 2023">
+                  <input class="field-mod field-date" type="text" id="date-end" name="date-end" value="1 сентября 2023" required>
                   <span class="modal-subtitle modal-available">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
 
@@ -244,13 +244,13 @@
                     <label class="search-options lable-people-field" for="number-input-adult"><span class="adult-field">Взрослые:</span></label>
                     <div class="more-less-btn-wrapper">
                       <button class="less quantity-button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157" aria-label="Иконка календаря для input.">
                           <path d="M0 0L0 2L14 2V0L0 0Z" fill-opacity="0.6"/>
                         </svg>
                       </button>
                       <input class="field-mod-people field-people" type="number" id="number-input-adult" name="number-input-adult" value="2" max="9">
                       <button class="more quantity-button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157" aria-label="Иконка календаря для input.">
                           <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill-opacity="0.6"/>
                         </svg>
                       </button>
@@ -266,13 +266,13 @@
                     </div>
                     <div class="more-less-btn-wrapper">
                       <button class="less quantity-button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="#756157" aria-label="Иконка минуса для кнопки меньше.">
                           <path d="M0 0L0 2L14 2V0L0 0Z" fill-opacity="0.6"/>
                         </svg>
                       </button>
                       <input class="field-mod-people field-people" type="number" id="number-input-child" name="number-input-child" value="2" max="9">
                       <button class="more quantity-button" type="button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="#756157" aria-label="Иконка плюса для кнопки больше.">
                           <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill-opacity="0.6"/>
                         </svg>
                       </button>
