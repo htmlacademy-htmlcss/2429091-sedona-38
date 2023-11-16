@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <title>HTML Academy: гостиницы в седоне</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="icon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
 </head>
 <body>
   <div class="container">
     <header class="page-header header-container" data-test="header">
       <a class="header-logo" href="https://htmlacademy.ru/">
-        <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona">
+        <img class="header-logo-img" src="icon/logotip-sedona.svg" alt="Логотип sedona." width="140" height="70">
       </a>
       <nav class="navigation">
         <div class="navigation-list-wrapper">
@@ -52,8 +52,11 @@
           <h1>Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item ">
-              <a class="breadcrumbs-link" href="#">
-                <img  class="breadcrumbs-link-home" src="images/catalog-image/main-home-icon.svg" alt="главная">
+              <a class="breadcrumbs-link" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="#fff" aria-hidden="true" focusable="false">
+                  <path d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"/>
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"/>
+                </svg>
               </a>
             </li>
             <li class="breadcrumbs-item breadcrumbs-link-vector">
@@ -68,34 +71,38 @@
             <div class="search-hotel-filters-wrapper">
               <fieldset class="search-hotel-filters-group">
                 <legend class="search-hotel-filters-title">Инфраструктура:</legend>
-                <label class="control">
-                  <input class="control-input input-checkbox" type="checkbox" name="swimming pool" checked>
-                  <span>Бассейн</span>
-                </label>
-                <label class="control">
-                  <input class="control-input input-checkbox" type="checkbox" name="parking" checked>
-                  <span>Парковка</span>
-                </label>
-                <label class="control">
-                  <input class="control-input input-checkbox" type="checkbox" name="Wi-Fi">
-                  <span>Wi-Fi</span>
-                </label>
+                <div class="control-wrapper">
+                  <label class="control">
+                    <input class="control-input input-checkbox" type="checkbox" name="swimming pool" checked>
+                    <span>Бассейн</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input input-checkbox" type="checkbox" name="parking" checked>
+                    <span>Парковка</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input input-checkbox" type="checkbox" name="Wi-Fi">
+                    <span>Wi-Fi</span>
+                  </label>
+                </div>
               </fieldset>
 
               <fieldset class="search-hotel-filters-group two-group-search">
                 <legend class="search-hotel-filters-title">Тип жилья:</legend>
-                <label class="control">
-                  <input class="control-input input-radio" type="radio" name="housing" checked>
-                  <span>Гостиница</span>
-                </label>
-                <label class="control">
-                  <input class="control-input input-radio" type="radio" name="housing">
-                  <span>Мотель</span>
-                </label>
-                <label class="control">
-                  <input class="control-input input-radio" type="radio" name="housing">
-                  <span>Апартаменты</span>
-                </label>
+                <div class="control-wrapper">
+                  <label class="control">
+                    <input class="control-input input-radio" type="radio" name="housing" checked>
+                    <span>Гостиница</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input input-radio" type="radio" name="housing">
+                    <span>Мотель</span>
+                  </label>
+                  <label class="control">
+                    <input class="control-input input-radio" type="radio" name="housing">
+                    <span>Апартаменты</span>
+                  </label>
+                </div>
               </fieldset>
             </div>
 
@@ -159,10 +166,10 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="14"
-                    fill="none"
+                    fill="#000"
                     role="img"
                     aria-label="Показать мелкие значки.">
-                    <path fill="#000"
+                    <path
                           d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
                   </svg>
                 </a>
@@ -172,10 +179,10 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="14"
-                    fill="none"
+                    fill="#000"
                     role="img"
                     aria-label="Показать крупные значки.">
-                    <path fill="#000"
+                    <path
                           d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
                   </svg>
                 </a>
@@ -185,10 +192,10 @@
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="14"
-                    fill="none"
+                    fill="#000"
                     role="img"
                     aria-label="Показать списком.">
-                    <path fill="#000"
+                    <path
                           d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
                   </svg>
                 </a>
@@ -213,7 +220,56 @@
                       <button class="button-small blue-background-bottom" type="button">В избранное</button>
                     </div>
                     <div class="product-card-reiting-wrapper">
-                      <img class="category-star-img" src="images/catalog-image/main-hotel-reiting-star-4.svg" alt="Четырёхзвездочный отель">
+                      <ul class="reiting-star-list">
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                      </ul>
                       <p class="hotel-reiting">РЕЙТИНГ: 8,5</p>
                     </div>
                   </section>
@@ -235,7 +291,56 @@
                       <button class="button-small button-green-background" type="button">В избранном</button>
                     </div>
                     <div class="product-card-reiting-wrapper">
-                      <img class="category-star-img" src="images/catalog-image/main-hotel-reiting-star-4.svg" alt="Четырёхзвездочный отель">
+                      <ul class="reiting-star-list">
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                      </ul>
                       <p class="hotel-reiting">РЕЙТИНГ: 9,2</p>
                     </div>
                   </section>
@@ -257,7 +362,44 @@
                       <button class="button-small blue-background-bottom" type="button">В избранное</button>
                     </div>
                     <div class="product-card-reiting-wrapper">
-                      <img class="category-star-img" src="images/catalog-image/main-hotel-reiting-star-3.svg" alt="трёхзвездочный отель">
+                      <ul class="reiting-star-list">
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                      </ul>
                       <p class="hotel-reiting">РЕЙТИНГ: 6,9</p>
                     </div>
                   </section>
@@ -279,7 +421,32 @@
                       <button class="button-small blue-background-bottom" type="button">В избранное</button>
                     </div>
                     <div class="product-card-reiting-wrapper">
-                      <img class="category-star-img" src="images/catalog-image/main-hotel-reiting-star-2.svg" alt="двухзвездочный отель">
+                      <ul class="reiting-star-list">
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                        <li class="reiting-star-item">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
+                            <g clip-path="url(#clip0_96232_80)">
+                            <path d="M9 0L11.1 6.5H18L12.4 10.5L14.6 17L9 13L3.4 17L5.6 10.5L0 6.5H6.9L9 0Z" fill="#83B3D3"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_96232_80">
+                            <rect width="18" height="17" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>
+                        </li>
+                      </ul>
                       <p class="hotel-reiting">РЕЙТИНГ: 5,0</p>
                     </div>
                   </section>
@@ -363,7 +530,7 @@
                 fill="#82b2d3c4"
                 role="img"
                 aria-label="Мы во Вконтакте.">
-                <path fill-rule="evenodd" d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" clip-rule="evenodd"/>
+                <path d="M24.12 1.8c.16-.54 0-.94-.8-.94H20.7c-.67 0-.98.34-1.15.73 0 0-1.33 3.2-3.22 5.27-.61.6-.9.8-1.23.8-.16 0-.41-.2-.41-.75v-5.1c0-.66-.19-.95-.74-.95H9.82c-.42 0-.67.3-.67.59 0 .62.95.76 1.04 2.51v3.8c0 .83-.15.98-.48.98-.9 0-3.06-3.2-4.34-6.88-.25-.72-.5-1-1.18-1H1.57c-.75 0-.9.34-.9.73 0 .68.89 4.07 4.14 8.55 2.17 3.06 5.23 4.72 8 4.72 1.68 0 1.88-.37 1.88-1v-2.32c0-.74.16-.88.7-.88.38 0 1.05.19 2.6 1.66 1.79 1.75 2.08 2.54 3.08 2.54h2.63c.75 0 1.12-.37.9-1.1-.23-.72-1.08-1.77-2.2-3.02-.62-.71-1.54-1.48-1.82-1.86-.39-.5-.28-.71 0-1.15 0 0 3.2-4.42 3.54-5.93Z" clip-rule="evenodd"/>
               </svg>
               </a>
             </li>
@@ -403,7 +570,7 @@
           <h2 class="visually-hidden">Создатели сайта</h2>
           <a class="html-academy-link" href="https://htmlacademy.ru/">
             <svg
-              class="html-academy-logo"
+              class="html-academy"
               xmlns="http://www.w3.org/2000/svg"
               width="115"
               height="34"

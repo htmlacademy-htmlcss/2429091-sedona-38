@@ -42,9 +42,11 @@ html {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-x: hidden;
 }
 
 
@@ -58,8 +60,6 @@ body {
   line-height: 21px;
   color: #252525;
   background-color: #F2F2F2;
-
-
 }
 
 .main-container {
@@ -154,7 +154,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   min-width: 88px;
-  max-width: 177px;
+  max-width: 170px;
   padding: 0;
 }
 
@@ -175,12 +175,12 @@ body {
 
 .navigation button {
   display: flex;
-  padding: 0;
+  padding: 8px 30px;
   border: none;
   cursor: pointer;
   color: #fff;
   width: 160px;
-  height: 36px;
+  word-break: break-word;
   font-family: PT Sans;
   font-size: 16px;
   font-weight: 700;
@@ -217,11 +217,22 @@ body {
 .navigation-link:focus {
   opacity: 0.6;
 }
+
+
+.navigation-link:active {
+  opacity: 0.3;
+}
+
 .search:hover,
 .favourites:hover,
 .search:focus,
 .favourites:focus {
   opacity: 0.6;
+}
+
+.search:active,
+.favourites:active {
+  opacity: 0.3;
 }
 
 .navigation-border::after {
@@ -323,7 +334,8 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  width: 175px;
+  max-width: 175px;
+  word-break: break-word;
 
 }
 
@@ -829,7 +841,8 @@ body {
 
 }
 
-.catalog-header + h1 {
+.catalog-header h1 {
+  font-family: PT Sans;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -880,8 +893,15 @@ body {
   text-decoration: none;
 }
 
-.breadcrumbs-link:hover,
-.breadcrumbs-link:active {
+.breadcrumbs-link:hover svg {
+  fill: #ffffff97;
+}
+
+.breadcrumbs-link:active svg {
+  opacity: 0.5;
+}
+
+.breadcrumbs-link:hover {
   color: #ffffff97;
 }
 
@@ -968,6 +988,8 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
+  max-width: 110px;
+  word-break: break-word;
 }
 
 .price-inputs {
@@ -1109,7 +1131,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   width: 292px;
-  padding: 11px 20px;
+  padding: 13px 18px;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1148,8 +1170,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px ;
-  justify-content: flex-end;
+  gap: 32px;
 }
 
 
@@ -1181,6 +1202,7 @@ body {
   display: flex;
   font-family: PT Sans;
   width: 191px;
+  word-break: break-word;
   justify-content: center;
   padding: 8px 50px;
   border: none;
@@ -1205,6 +1227,12 @@ body {
   opacity: 0.4;
 }
 
+.control-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .search-hotel-filters-title {
   font-size: 20px;
   font-weight: 700;
@@ -1212,6 +1240,9 @@ body {
   text-transform: capitalize;
   padding: 0;
   margin-bottom: 32px;
+  max-width: 170px;
+  word-break: break-word;
+
 }
 
 .hotels-search-pagination-item-wrapper {
@@ -1257,6 +1288,17 @@ body {
   gap: 20px;
   padding: 0;
   margin-top: 40px;
+}
+
+.reiting-star-list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  width: 140px;
+  max-width: 140px;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 
 .product-card-wrapper-over::after {
@@ -1309,6 +1351,13 @@ body {
 
 .product-card-title-wrapper p {
   margin: 0;
+  max-width: 140px;
+  word-break: break-word;
+}
+
+.right-aligned {
+  max-width: 140px;
+  word-break: break-word;
 }
 
 .hotels-search-pagination-button {
@@ -1495,6 +1544,10 @@ body {
 
 .view-mode-button:focus {
   outline: 1px solid #82B3D3;
+}
+
+.view-mode-button:active {
+  opacity: 0.3;
 }
 
 .view-mode-button-selected {
@@ -1853,35 +1906,6 @@ body {
   flex-direction: column;
   gap: 23px;
 }
-
-/* .less::before {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../icon/icon-field-people-les.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  opacity: 0.4;
-}
-
-.more::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../icon/icon-field-people-more.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-  filter: grayscale(100%) opacity(0.4);
-}
-
-.more::after:hover {
-  filter: grayscale(0%) opacity(1);
-} */
-
 .people {
   margin-right: 46px;
 }
@@ -1913,6 +1937,10 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.tooltip-toggle:hover {
+  opacity: 0.6;
 }
 
 .tooltip-children-wrapper {
