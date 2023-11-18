@@ -96,7 +96,7 @@ body {
   position: relative;
   width: 100%;
   height: 83px;
-  background-image: url("../images/index-image/Vector-hero-befor.svg");
+  background-image: url("../images/index-image/hero-befor-vector.svg");
   background-repeat: no-repeat;
   bottom: -27px;
 }
@@ -637,7 +637,7 @@ body {
 }
 
 .news-letter-background {
-  background-image: url("../images/index-image/Subscribe-footer-background.png");
+  background-image: url("../images/index-image/footer-background-subscribe.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #cfcece;
