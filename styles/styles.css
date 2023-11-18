@@ -1543,7 +1543,7 @@ body {
 }
 
 .view-mode-button:focus {
-  outline: 1px solid #82B3D3;
+  outline: 2px solid #82B3D3;
 }
 
 .view-mode-button:active {
